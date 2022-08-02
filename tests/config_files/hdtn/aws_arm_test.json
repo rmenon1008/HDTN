@@ -65,7 +65,7 @@
                 "convergenceLayer": "stcp",
                 "nextHopEndpointId": "ipn:2.1",
                 "remoteHostname": "localhost",
-				"remotePort": 4558,
+		"remotePort": 4558,
                 "bundlePipelineLimit": 5,
                 "finalDestinationEidUris": [
                     "ipn:2.1",
