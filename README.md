@@ -101,7 +101,7 @@ Sender Configuration:
 * Change "myEndpointId:" to "myEndpointId: ipn:10.1"
 * Change "boundPort:" to "boundPort: 4556"
 * Change "nextHopEndpointId": to "nextHopEndpointId: ipn:20.1"
-* Change "remoteHostname:" to "remoteHostname: Private IP Address of Reciever"
+* Change "remoteHostname:" to "remoteHostname: Private IP Address of Receiver"
 * Change "remotePort:" to "remotePort: 4557"
 
 Receiver Configuration:
