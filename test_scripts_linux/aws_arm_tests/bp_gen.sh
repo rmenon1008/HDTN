@@ -2,7 +2,7 @@
 
 # path variables
 config_files=$HDTN_SOURCE_ROOT/tests/config_files
-gen_config=$config_files/outducts/bpgen_one_tcpclv4_port4556.json
+gen_config=$config_files/outducts/bpgen_one_stcp_port4556.json
 
 cd $HDTN_SOURCE_ROOT
 
