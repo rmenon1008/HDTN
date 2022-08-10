@@ -2,7 +2,7 @@
     "hdtnConfigName": "my hdtn config",
     "userInterfaceOn": true,
     "mySchemeName": "unused_scheme_name",
-    "myNodeId": ,
+    "myNodeId": 20,
     "myBpEchoServiceId": 2047,
     "myCustodialSsp": "unused_custodial_ssp",
     "myCustodialServiceId": 0,
@@ -35,18 +35,12 @@
         "inductConfigName": "myconfig",
         "inductVector": [
             {
-                "name": "tcpcl_ingress",
-                "convergenceLayer": "tcpcl_v4",
-                "myEndpointId": "",
-                "boundPort": ,
-                "numRxCircularBufferElements": 200,
-                "numRxCircularBufferBytesPerElement": 20000,
-                "keepAliveIntervalSeconds": 15,
-                "tcpclV4MyMaxRxSegmentSizeBytes": 200000,
-                "tlsIsRequired": false,
-                "certificatePemFile": "",
-                "privateKeyPemFile": "",
-                "diffieHellmanParametersPemFile": ""
+                "name": "udp_ingress",
+                "convergenceLayer": "udp",
+                "myEndpointId": "ipn:20.1",
+                "boundPort": 4557,
+                "numRxCircularBufferElements": 2000,
+                "numRxCircularBufferBytesPerElement": 1500
             }
         ]
     },
@@ -54,25 +48,16 @@
         "outductConfigName": "myconfig",
         "outductVector": [
             {
-                "name": "tcpcl_egress",
-                "convergenceLayer": "tcpcl_v4",
-                "nextHopEndpointId": "",
-                "remoteHostname": "",
-                "remotePort": ,
+                "name": "stcp_egress2",
+                "convergenceLayer": "stcp",
+                "nextHopEndpointId": "ipn:2.1",
+                "remoteHostname": "localhost",
+                "remotePort": 4558,
                 "bundlePipelineLimit": 5,
                 "finalDestinationEidUris": [
-                    "ipn:2.1",
-                    "ipn:2.2047"
+                    "ipn:2.1"
                 ],
-                "keepAliveIntervalSeconds": 17,
-                "tcpclAllowOpportunisticReceiveBundles": true,
-                "tcpclV4MyMaxRxSegmentSizeBytes": 200000,
-                "tryUseTls": false,
-                "tlsIsRequired": false,
-                "useTlsVersion1_3": false,
-                "doX509CertificateVerification": false,
-                "verifySubjectAltNameInX509Certificate": false,
-                "certificationAuthorityPemFileForVerification": ""
+             "keepAliveIntervalSeconds": 15
             }
         ]
     },
