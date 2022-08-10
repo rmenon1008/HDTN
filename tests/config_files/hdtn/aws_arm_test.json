@@ -35,18 +35,12 @@
         "inductConfigName": "myconfig",
         "inductVector": [
             {
-                "name": "tcpcl_ingress",
-                "convergenceLayer": "tcpcl_v4",
-                "myEndpointId": "",
-                "boundPort": ,
+                "name": "stcp_ingress",
+                "convergenceLayer": "stcp",
+                "myEndpointId": "ipn:20.1",
+                "boundPort": 4556,
                 "numRxCircularBufferElements": 200,
-                "numRxCircularBufferBytesPerElement": 20000,
-                "keepAliveIntervalSeconds": 15,
-                "tcpclV4MyMaxRxSegmentSizeBytes": 200000,
-                "tlsIsRequired": false,
-                "certificatePemFile": "",
-                "privateKeyPemFile": "",
-                "diffieHellmanParametersPemFile": ""
+                "keepAliveIntervalSeconds": 15
             }
         ]
     },
@@ -54,25 +48,16 @@
         "outductConfigName": "myconfig",
         "outductVector": [
             {
-                "name": "tcpcl_egress",
-                "convergenceLayer": "tcpcl_v4",
-                "nextHopEndpointId": "",
-                "remoteHostname": "",
-                "remotePort": ,
+                "name": "udp_egress2",
+                "convergenceLayer": "udp",
+                "nextHopEndpointId": "ipn:20.1",
+                "remoteHostname": "IPv4 ADDRESS OF RECEIVER",
+                "remotePort": 4557,
                 "bundlePipelineLimit": 5,
                 "finalDestinationEidUris": [
-                    "ipn:2.1",
-                    "ipn:2.2047"
+                    "ipn:2.1"
                 ],
-                "keepAliveIntervalSeconds": 17,
-                "tcpclAllowOpportunisticReceiveBundles": true,
-                "tcpclV4MyMaxRxSegmentSizeBytes": 200000,
-                "tryUseTls": false,
-                "tlsIsRequired": false,
-                "useTlsVersion1_3": false,
-                "doX509CertificateVerification": false,
-                "verifySubjectAltNameInX509Certificate": false,
-                "certificationAuthorityPemFileForVerification": ""
+                "udpRateBps": 1000000000
             }
         ]
     },
