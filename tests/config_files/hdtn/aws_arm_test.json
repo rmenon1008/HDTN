@@ -2,7 +2,7 @@
     "hdtnConfigName": "my hdtn config",
     "userInterfaceOn": true,
     "mySchemeName": "unused_scheme_name",
-    "myNodeId": ,
+    "myNodeId": 10,
     "myBpEchoServiceId": 2047,
     "myCustodialSsp": "unused_custodial_ssp",
     "myCustodialServiceId": 0,
