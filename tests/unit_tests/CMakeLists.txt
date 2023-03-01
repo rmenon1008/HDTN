@@ -19,7 +19,7 @@ add_executable(unit-tests
 	../../common/util/test/TestEnumAsFlagsMacro.cpp
 	../../common/util/test/TestPaddedVectorUint8.cpp
 	../../common/util/test/TestFreeListAllocator.cpp
-	../../common/util/test/TestCpuFlagDetection.cpp
+	#../../common/util/test/TestCpuFlagDetection.cpp	#--- Removed to allow building on aarch64
 	../../common/util/test/TestTokenRateLimiter.cpp
 	../../common/util/test/TestUdpBatchSender.cpp
 	../../common/util/test/TestJsonSerializable.cpp
