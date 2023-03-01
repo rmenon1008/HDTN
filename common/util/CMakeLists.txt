@@ -1,5 +1,5 @@
 add_library(hdtn_util
-	src/CpuFlagDetection.cpp
+	#src/CpuFlagDetection.cpp	#--- Removed to allow building on aarch64
     src/CircularIndexBufferSingleProducerSingleConsumerConfigurable.cpp
     src/Environment.cpp
 	src/JsonSerializable.cpp
