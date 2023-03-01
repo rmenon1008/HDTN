@@ -152,6 +152,13 @@ if(ENABLE_OPENSSL_SUPPORT)
 	find_package(OpenSSL REQUIRED)
 endif()
 
+#--- Edits to build on aarch64 architecture
+set(Boost_USE_STATIC_LIBS ON)
+set(USE_X86_HARDWARE_ACCELERATION OFF)
+set(LTP_RNG_USE_RDSEED OFF)
+set(CMAKE_CXX_FLAGS_RELEASE "-03 -DNDEBUG -fPIC")
+#--- End edits
+
 include(${CMAKE_SOURCE_DIR}/add_hdtn_package_export.cmake)
 
 add_subdirectory(common/bpcodec)
